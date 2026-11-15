@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>WebViewShell</string>
+	<string>Duo</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -28,8 +28,20 @@
 	     ★ 改成你自己的域名 -->
 	<key>WKAppBoundDomains</key>
 	<array>
-		<string>example.com</string>
+		<string>192.168.1.116</string>
+		<string>image.tmdb.org</string>
+		<string>api.themoviedb.org</string>
+		<string>s4.anilist.co</string>
 	</array>
+
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Duo streams video from your Duo server on your home network.</string>
 
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
