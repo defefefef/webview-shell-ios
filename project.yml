@@ -29,8 +29,8 @@ targets:
           - "Info.plist"
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.example.webviewshell
-        PRODUCT_NAME: WebViewShell
+        PRODUCT_BUNDLE_IDENTIFIER: com.duo.stream
+        PRODUCT_NAME: Duo
         INFOPLIST_FILE: Resources/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         GENERATE_INFOPLIST_FILE: NO
