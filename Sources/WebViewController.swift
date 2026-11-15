@@ -4,7 +4,7 @@ import WebKit
 final class WebViewController: UIViewController {
 
     // ★ 改成你的网站地址
-    private static let homeURL = URL(string: "https://example.com")!
+    private static let homeURL = URL(string: "http://192.168.1.116:8688/")!
 
     private var webView: WKWebView!
     private var themeObservation: NSKeyValueObservation?
@@ -17,7 +17,7 @@ final class WebViewController: UIViewController {
         config.websiteDataStore = .default()
 
         // 开 Service Worker（配合 Info.plist 的 WKAppBoundDomains）
-        config.limitsNavigationsToAppBoundDomains = true
+        config.limitsNavigationsToAppBoundDomains = false
 
         config.allowsInlineMediaPlayback = true
         config.mediaTypesRequiringUserActionForPlayback = []
